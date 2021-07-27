@@ -1,9 +1,6 @@
 <section>
-    <app-task></app-task>
+  <div *ngFor="let task of tasks; index as i">
+    <app-task [task]="task" key="i" [i]="i"></app-task>
     <mat-divider></mat-divider>
-    <app-task></app-task>
-    <mat-divider></mat-divider>
-    <app-task></app-task>
-    <mat-divider></mat-divider>
-    <app-task></app-task>
+  </div>
 </section>

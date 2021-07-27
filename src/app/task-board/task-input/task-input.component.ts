@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TaskService } from '../task.service';
 
 @Component({
   selector: 'app-task-input',
@@ -7,8 +8,14 @@ import { Component } from '@angular/core';
 })
 export class TaskInputComponent {
   taskText = '';
+  taskService: TaskService;
+
+  constructor(taskService: TaskService) {
+    this.taskService = taskService;
+  }
 
   add() {
+    this.taskService.storeNewTask(this.taskText);
     this.taskText = '';
   }
 
