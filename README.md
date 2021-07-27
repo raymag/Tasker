@@ -1,5 +1,5 @@
 # Tasker
-
+Simple todo list app made with Angular and Angular Material for study purporses.
 ![screenshot](https://user-images.githubusercontent.com/29918030/127190958-f352b3f3-cca1-4bb8-9ff0-8653ef8ebe45.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
