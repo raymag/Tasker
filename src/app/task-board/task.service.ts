@@ -14,8 +14,11 @@ export class TaskService {
   }
 
   private getStoredTasks() {
-    const storedTasks = JSON.parse(localStorage.getItem("tasks") || '');
-    return storedTasks? storedTasks: [];
+    const storedData = localStorage.getItem("tasks");
+    if (storedData) {
+      const storedTasks = JSON.parse( storedData);
+      return storedTasks? storedTasks: [];
+    } return [];
   }
 
   private setStoredTasks() {
